@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setListeners()
     }
+//  when id is activated: changes the background color to the set color
     private fun makeColored(view: View) {
         when (view.id) {
 //            boxes using Color class colors for the background
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
     }
+//  finding the views by their id and adding them a clickableViews list
     private fun setListeners(){
         val boxOneText = findViewById<TextView>(R.id.box_one_text)
         val boxTwoText = findViewById<TextView>(R.id.box_two_text)
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         val clickableViews: List<View> =
             listOf(boxOneText, boxTwoText, boxThreeText,
                    boxFourText, boxFiveText, rootConstraintLayout)
+//      for loop to set event listeners on each view in clickableViews
         for (item in clickableViews) {
             item.setOnClickListener { makeColored(it) }
         }

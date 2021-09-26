@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Constraint view allows you to build responsive UI-->
+<!--A Horizontal and Vertical constraint is required-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<!--Box Uno-->
     <TextView
         android:id="@+id/box_one_text"
         style="@style/WhiteBox"
@@ -20,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.005" />
-
+<!--Box Dos-->
     <TextView
         android:id="@+id/box_two_text"
         style="@style/WhiteBox"
@@ -31,7 +33,7 @@
         android:text="@string/box_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/box_one_text" />
-
+<!--Box Tres-->
     <TextView
         android:id="@+id/box_three_text"
         style="@style/WhiteBox"
@@ -42,7 +44,7 @@
         android:text="@string/box_three"
         app:layout_constraintStart_toEndOf="@+id/box_two_text"
         app:layout_constraintTop_toBottomOf="@+id/box_one_text" />
-
+<!--Box Quarto-->
     <TextView
         android:id="@+id/box_four_text"
         style="@style/WhiteBox"
@@ -53,7 +55,7 @@
         android:text="@string/box_four"
         app:layout_constraintStart_toEndOf="@+id/box_two_text"
         app:layout_constraintTop_toBottomOf="@+id/box_three_text" />
-
+<!--Box Cinco-->
     <TextView
         android:id="@+id/box_five_text"
         style="@style/WhiteBox"
