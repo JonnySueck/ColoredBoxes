@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ColorMyViews</string>
+    <string name="hello_earthlings">Hello Earthlings</string>
+    <string name="box_one">Soy La Caja Uno!</string>
+    <string name="box_two">Soy La Caja Dos!</string>
+    <string name="box_three">Soy La Caja Tres!</string>
+    <string name="box_four">Soy La Caja Quarto!</string>
+    <string name="box_five">Soy La Caja Cinco!</string>
+</resources>
